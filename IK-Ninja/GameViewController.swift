@@ -8,8 +8,11 @@
 
 import UIKit
 import SpriteKit
+import AVFoundation
 
 class GameViewController: UIViewController {
+    
+    var audioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,8 @@ class GameViewController: UIViewController {
             
             skView.presentScene(scene)
         }
+        
+        startBackgroundMusic()
     }
     
     override func shouldAutorotate() -> Bool {
@@ -49,5 +54,20 @@ class GameViewController: UIViewController {
     
     override func prefersStatusBarHidden() -> Bool {
         return true
+    }
+    
+    func startBackgroundMusic() {
+        if let path = NSBundle.mainBundle().pathForResource("bg", ofType: "mp3") {
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path), fileTypeHint: "mp3")
+            } catch {
+            }
+            
+            if let player = audioPlayer {
+                player.prepareToPlay()
+                player.numberOfLoops = -1
+                player.play()
+            }
+        }
     }
 }

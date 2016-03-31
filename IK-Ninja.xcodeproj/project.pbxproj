@@ -19,6 +19,7 @@
 		D90F6C7C19BC106100A203F4 /* hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D90F6C7919BC106100A203F4 /* hit.mp3 */; };
 		D90F6C7D19BC106100A203F4 /* miss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D90F6C7A19BC106100A203F4 /* miss.mp3 */; };
 		D94F0B3219BC204F00187E3F /* attribution.txt in Resources */ = {isa = PBXBuildFile; fileRef = D94F0B3119BC204F00187E3F /* attribution.txt */; };
+		E6A56E551CACFFAD0067C202 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A56E541CACFFAD0067C202 /* GameOverScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D90F6C7919BC106100A203F4 /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit.mp3; sourceTree = "<group>"; };
 		D90F6C7A19BC106100A203F4 /* miss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = miss.mp3; sourceTree = "<group>"; };
 		D94F0B3119BC204F00187E3F /* attribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attribution.txt; sourceTree = "<group>"; };
+		E6A56E541CACFFAD0067C202 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				D90F6C5319BC101200A203F4 /* AppDelegate.swift */,
 				D90F6C5519BC101200A203F4 /* GameScene.sks */,
 				D90F6C5719BC101200A203F4 /* GameScene.swift */,
+				E6A56E541CACFFAD0067C202 /* GameOverScene.swift */,
 				D90F6C5919BC101200A203F4 /* GameViewController.swift */,
 				D90F6C5B19BC101200A203F4 /* Main.storyboard */,
 				D90F6C5E19BC101200A203F4 /* Images.xcassets */,
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A56E551CACFFAD0067C202 /* GameOverScene.swift in Sources */,
 				D90F6C5819BC101200A203F4 /* GameScene.swift in Sources */,
 				D90F6C5A19BC101200A203F4 /* GameViewController.swift in Sources */,
 				D90F6C7619BC105100A203F4 /* CGFloat+Extensions.swift in Sources */,
